@@ -2,19 +2,21 @@ const express = require('express');
 const tasks = require('./routes/tasks')
 const connectDb = require('./connection/db');
 require('dotenv').config();
+const notFound = require('./middleware/error');
+const errorHandlerMiddleware = require('./middleware/error-handler')
+
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 //middleware
 //exprress.json() is builtin middleware in express to read data from req body
 app.use(express.json());
+app.use(express.static('./public'))
 // here tasks is middle ware written by us
 app.use('/api/v1/tasks', tasks);
+app.use(notFound);
+app.use(errorHandlerMiddleware);
 
-
-app.get('/', (req, res)=>{
-    res.send("Welcome to Task Manager");
-})
 
 const connectToDb = async() =>{
     try {
