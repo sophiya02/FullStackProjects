@@ -11,7 +11,7 @@ const port = process.env.PORT || 3000;
 //middleware
 //exprress.json() is builtin middleware in express to read data from req body
 app.use(express.json());
-app.use(express.static('./public'))
+app.use(express.static('../client/public'))
 // here tasks is middle ware written by us
 app.use('/api/v1/tasks', tasks);
 app.use(notFound);
