@@ -1,0 +1,101 @@
+.main-card {
+    width: 400px;
+    height: 470px;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: space-around;
+    
+  }
+
+  .main-card-head{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+  }
+
+  mat-card-title, mat-card-subtitle{
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .img-bg{
+    margin: 0 auto;
+    width:340px;
+    height: 220px;
+    background-color: #F6F8FB;
+    border: 1px dashed #97BEF4;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+
+  // progress
+
+  .progress-card{
+    width: 400px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+    
+  }
+
+  .progress-card-title{
+    text-align: left;
+    margin-left: 30px;
+  }
+
+  .progress-bar{
+    width: 340px;
+    margin: 15px auto 0px;
+  }
+
+
+  //uploaded
+  .uploaded-main-card-head{
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+
+  }
+  .icon{
+    color: #219653;
+    font-size: 35px;
+    width: 35px;
+    height: 35px;
+  }
+  .uploaded-image{
+    width: 340px;
+    border-radius: 12px;
+  }
+
+  .link{
+    max-height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6F8FB;
+    overflow: hidden;
+    text-align: left;
+    width: 340px;
+    padding: 10px;
+  }
+
+  .link p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0px;
+  }
+
