@@ -1,0 +1,54 @@
+<div class="main-container">
+  <div style="color:blue" class="back">
+    <mat-icon>keyboard_arrow_left</mat-icon>
+    <a routerLink="/api/v1/profile/show-profile">Back</a>
+  </div>
+  <div class="container">
+    <h1 class="mat-title container-heading">Change info</h1>
+    <p class="mat-subtitle container-heading"> Changes will be reflected to every services</p>
+    <form class="form">
+      <!-- <p-avatar class="avatar" size="xlarge" image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLPV2bvN1pU4JFcyHu7nANwHXnc6dWhzmSrJQS2vGd&s"></p-avatar> -->
+      <div class="photo">
+        <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLPV2bvN1pU4JFcyHu7nANwHXnc6dWhzmSrJQS2vGd&s"> -->
+        <div class="img-bg">
+          <div class="img"></div>
+          <div class="cam-top">
+            <mat-icon>camera_enhance</mat-icon>
+          </div>
+        </div>
+
+        <p class="mat-body photo-label">CHANGE PHOTO</p>
+        
+      </div>
+      
+      
+      <mat-form-field class="mat-form-field" appearance="outline">
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="name">
+      </mat-form-field>
+      <mat-form-field class="mat-form-field" appearance="outline">
+        <mat-label>Bio</mat-label>
+        <textarea matInput placeholder="Bio"></textarea>
+      </mat-form-field>
+      <mat-form-field class="mat-form-field" appearance="outline">
+        <mat-label>Phone</mat-label>
+        <input matInput placeholder="Phone">
+      </mat-form-field>
+      <mat-form-field class="mat-form-field" appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Email">
+      </mat-form-field>
+      <mat-form-field class="mat-form-field" appearance="outline">
+        <mat-label>Password</mat-label>
+        <input matInput placeholder="Password">
+      </mat-form-field>
+    </form>
+
+    <button class="save-button" mat-raised-button color="primary">Save</button>
+  </div>
+
+  
+    
+
+    
+</div>

@@ -1,0 +1,28 @@
+<div class="container">
+    <h1 class="mat-title">Join thousands of learners form around the world</h1>
+    <p class="mat-subtitle container-subheading">Master Web development by making real life projects. There are multiple paths to follow from.</p>
+    <form class="form">
+        <mat-form-field appearance="outline" class="mat-form-field">
+            <mat-label class="mat-label">Enter your email</mat-label>
+            <mat-icon class="mat-icon" matPrefix>mail</mat-icon>
+            <input class="input" matInput placeholder="email">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label class="mat-label">Enter your password</mat-label>
+            <mat-icon class="mat-icon" matPrefix>lock</mat-icon>
+            <input class="input" matInput placeholder="password">
+            <mat-icon class="mat-icon" matSuffix>remove_red_eye</mat-icon>
+        </mat-form-field>
+        <button class="submit-button" mat-raised-button color="primary">Start coding now</button>
+    </form>
+    <p class="container-body">or continue with these social profile</p>
+    <div class="icons-list">
+        <button mat-mini-fab><mat-icon class="fa-brands fa-google"></mat-icon></button>
+        <button mat-mini-fab><mat-icon class="fa-brands fa-facebook"></mat-icon></button>
+        <button mat-mini-fab><mat-icon class="fa-brands fa-twitter"></mat-icon></button>
+        <button mat-mini-fab><mat-icon class="fa-brands fa-github"></mat-icon></button>
+    </div>
+
+    <div class="container-footer"> <p>Already have an account? <a routerLink="/api/v1/auth/login">Login</a> </p></div>
+    
+</div>

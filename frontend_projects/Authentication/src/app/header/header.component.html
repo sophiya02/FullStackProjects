@@ -1,0 +1,33 @@
+<mat-toolbar class="mat-toolbar">
+    <div class="logo">Logo</div>
+    <div class="profile">
+        <p-avatar label="S" shape="circle" [style]="{'background-color': 'rgb(223, 14, 125)', 'color':'white'}"></p-avatar>
+        <p class="mat-body-strong name">Sophiya Singh</p>
+        <button mat-icon-button [matMenuTriggerFor]="menu"><mat-icon>arrow_drop_down</mat-icon></button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item routerLink="/api/v1/profile/show-profile">
+                <mat-icon>account_circle</mat-icon>
+                <span>My Profile</span>
+            </button>
+            <button mat-menu-item>
+                <mat-icon>people</mat-icon>
+                <span>Group Chat</span>
+            </button>
+            <mat-divider></mat-divider>
+            <button mat-menu-item >
+                <mat-icon style="color: red">arrow_forward</mat-icon>
+                <span style="color: red">Logout</span>
+            </button>
+        </mat-menu>
+        
+    </div>
+</mat-toolbar>
+
+<!-- <mat-toolbar class="mat-toolbar">
+    <div class="logo">Logo</div>
+    <div class="profile">
+
+        <button mat-raised-button routerLink="/api/v1/auth/login" color="primary">Login/Register</button>
+        
+    </div>
+</mat-toolbar> -->
